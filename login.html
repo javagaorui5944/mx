@@ -22,7 +22,7 @@
 				<div class="input-group">
 					<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
 					<input type="password" class="form-control input-lg" placeholder="请输入密码"/>
-					<div class="btn btn-success btn-lg input-group-addon">登录</div>
+					<div class="btn btn-success btn-lg input-group-addon js-longinbtn">登录</div>
 				</div>
 			</div>
 			<div class="alert alert-danger login_danger">
@@ -47,17 +47,20 @@
 		<script src="static/js/ip.js"></script>
 	     <script>
 	     	$(function(){
-	     		$.ajax({
-	     			url:_ip+"/api/LoginMe",
-	     			dataType :"json",
-	     			type:'get',
-	     			data:{"userName":'gaorui',"userPwd":'123456'},
-	     			success:function(data){
-	     				if(data.
-	     			},
-	     			error:function(data){
-	     			}
-
+	     		$(".js-longinbtn").on("click",function(){
+	     			$.ajax({
+		     			url:_ip+"/api/LoginMe",
+		     			dataType :"json",
+		     			type:'get',
+		     			data:{"userName":'gaorui',"userPwd":'123456'},
+		     			success:function(data){
+		     				if(data.code==1){
+		     					location.href = './index.html';
+		     				}
+		     			},
+		     			error:function(data){
+		     			}
+		     		})
 	     		})
 	     	})
 	     </script>

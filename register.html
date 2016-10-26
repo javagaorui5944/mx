@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Login</title>
+	<title>萌星说-注册</title>
 	<link rel="stylesheet" href="static/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="static/css/register.css"/>
 </head>
 <body>
 	<div id="register">
-		<p class="register_header">萌星识货注册</p>
+		<p class="register_header">萌星说-注册</p>
 		<hr/>
 		<form>
 			<div class="form-group" style="position:relative">
@@ -57,7 +57,7 @@
 				<div class="input-group">
 					<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
 					<input type="pessword" class="form-control input-lg" placeholder="确认密码"/>
-					<div class="btn btn-success btn-lg input-group-addon">注册</div>
+					<div class="btn btn-success btn-lg input-group-addon js-regbtn">注册</div>
 				</div>
 				<div class="register_notepassdanger alert alert-danger" role="alert">
 					密码不一致，请重新输入！
@@ -78,5 +78,23 @@
 	<script src="static/iframe/jquery.min.js"></script>
 	<script src="static/iframe/bootstrap.min.js"></script>
 	<script src="static/js/ip.js"></script>
+	 <script>
+     	$(function(){
+     		$(".js-regbtn").on("click",function(){
+     			$.ajax({
+	     			url:_ip+"/api/Registered?MemberNum=gaorui1&MemberPWD=123456&MemberSex=1&RealName=gaorui&Address=cqupt&Email=cqupt_gr@gamail.com&WeChat=adsda&Tel=1&RegistDate=111&IdentityNum=1&ImageUrl=1",
+	     			dataType :"json",
+	     			type:'get',
+	     			success:function(data){
+     					if(data.code==1){
+	     					location.href = './index.html';
+	     				}
+	     			},
+	     			error:function(data){
+	     			}
+	     		})
+     		})
+     	})
+	</script>
 </body>
 </html>
