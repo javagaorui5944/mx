@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>萌星说-登陆</title>
+	<link rel="stylesheet" href="static/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="static/css/login.css"/>
+</head>
+<body>
+	<div id="login">
+		<p class="login_header">萌星说登录</p  >
+		<hr/>
+		<form>
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+					<input type="text" class="form-control input-lg" placeholder="请输入登录名"/>
+				</div>
+			</div>
+		
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+					<input type="password" class="form-control input-lg" placeholder="请输入密码"/>
+					<div class="btn btn-success btn-lg input-group-addon">登录</div>
+				</div>
+			</div>
+		</form>
+		<div class="login_link">
+			<a href="#" style="margin:0">忘记密码?</a>
+			<a href="register.html" style="margin:0 0 0 160px">注册新用户</a>
+		</div>
+		<div class="login_other">
+			<a href="#"><img src="static/img/index/weibo.jpg"/></a>
+			<a href="#"><img src="static/img/index/weixin.jpg"/></a>
+			<a href="#"><img src="static/img/index/kongjian.jpg"/></a>
+			<a href="#"><img src="static/img/index/qq.jpg"/></a>
+		</div>
+	     <p class="login_footer">
+	     	萌星说，给ta和自己最好的礼物！
+	     </p>
+	    <script src="static/js/iframe/jquery.js"></script>
+		<script src="static/js/iframe/bootstrap.min.js"></script>
+		<script src="static/js/ip.js"></script>
+	     <script>
+	     	$(function(){
+	     		$.ajax({
+	     			url:_ip+"/api/LoginMe",
+	     			dataType :"json",
+	     			type:'get',
+	     			data:{"userName":'gaorui',"userPwd":'123456'},
+	     			success:function(data){
+	     				if(data.
+	     			},
+	     			error:function(data){
+	     			}
+
+	     		})
+	     	})
+	     </script>
+</body>
+</html>

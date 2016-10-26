@@ -1,1 +1,74 @@
-dadsadahjkdhsa
+body,#login{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background:url(../img/index/login_bg.jpg) no-repeat 100px 0px;
+	background-color:#92B53D;
+}
+a:focus{
+	outline:none;
+}
+#login{
+	position:absolute;
+	top:20px;
+	right:100px;
+	width:400px;
+	height:470px;
+	border:1px solid #ccc;
+	border-radius:8px;
+	background:#FFFFFF;
+}
+.login_header{
+	height:60px;
+	line-height:60px;
+	color:#ccc;
+	font-size:18px;
+	font-family:;
+	margin:10px 0 0 10px;
+	text-align:center;
+}
+#login hr{
+	margin:0;
+}
+#login form{
+	width:300px;
+	margin:40px auto;
+}
+#login form input{
+	font-size:14px;
+	color:#999;
+}
+.login_link{
+	width:300px;
+	margin:20px auto;
+}
+.login_link a{
+	text-decoration:none;
+}
+.login_link a:hover{
+	text-decoration:underline;
+}
+.login_other{
+	width:300px;
+	margin:40px auto;
+}
+..login_other a{
+	text-decoration:none;
+}
+.login_other a img{
+	width:50px;
+	height:50px;
+	margin:0 11px 0px 11px;
+}
+.login_other a img:hover{
+	opacity:0.8;
+	filter:alpha(opacity = 80);
+}
+.login_footer{
+	width:400px;
+	text-align:center;
+	font-size:14px;
+	font-weight:normal;
+	color:#ccc;
+}

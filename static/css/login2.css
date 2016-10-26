@@ -1,0 +1,65 @@
+/*登陆框和注册框*/
+#login .login_header{
+	height:60px;
+	line-height:60px;
+	color:#ccc;
+	font-size:18px;
+	font-family:;
+	margin:10px 0 0 10px;
+}
+
+#login #login form,#register form{
+	width:400px;
+	margin:40px auto;
+}
+#login #login form input,#register form input{
+	font-size:14px;
+	color:#999;
+}
+#login .login_link{
+	width:400px;
+	margin:20px auto;
+	color:#999;
+	font-size:14px;
+}
+#login .login_link a{
+	text-decoration:none;
+}
+#login .login_link a:hover{
+	text-decoration:underline;
+}
+#login .login_other{
+	width:380px;
+	margin:20px auto;
+}
+#login .login_other a{
+	text-decoration:none;
+}
+#login .login_other a img{
+	width:50px;
+	height:50px;
+	margin:0 20px 0px 20px;
+}
+#login .login_other a img:hover{
+	opacity:0.8;
+}
+#login .login_footer{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:16px;
+	font-weight:normal;
+	color:#ccc;
+	margin:0;
+}
+#login h4,#register h4{
+	font-size:20px;
+	color:#ccc;
+	text-align:center;
+}
+#register .register_footer{
+	text-align:center;
+}
+#register .register_footer a{
+	text-decoration:none;
+}

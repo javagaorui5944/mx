@@ -3,3 +3,1593 @@
 * 如：.index .xxx {}
  */
 
+@charset "UTF-8";
+
+.index .footer {
+	width: 100%;
+	margin: 0 auto;
+	background: #f84e4e;
+	position: relative;
+	bottom: 0
+}
+
+.index .copyright {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+
+.index .copyright {
+	color: #fff;
+	font-size: 12px
+}
+
+.index .copyright a:link,.index .copyright a:visited,.index .copyright a:hover {
+	color: #fff;
+	text-decoration: none;
+	vertical-align: middle
+}
+
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0
+}
+
+.index .main-wrapper {
+	display: table;
+	height: 100%;
+	width: 100%
+}
+
+.index .footer {
+	display: table-row;
+	height: 1px
+}
+
+.index .header {
+	right: 0;
+	left: 0;
+	border-radius: 0;
+	top: 0;
+	z-index: 9999
+}
+
+.index .header .container-fixed-width {
+	margin: 0 auto;
+	width: 980px;
+	position: relative
+}
+
+.index .header .head-left {
+	width: 770px;
+	float: left
+}
+
+.index .header .head-right {
+	width: 150px;
+	float: right;
+	height: 84px
+}
+
+.index .header-logo {
+	display: block;
+	background: url(http://static.liwushuo.com/static/web/img/base-layout/logo_9699ecd.png);
+	background-size: 100%;
+	-ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	width: 260px;
+	height: 30px;
+	margin-top: 28px;
+	float: left
+}
+
+.index #header-nav {
+	height: 40px;
+	background: #f84e4e;
+	clear: both;
+	width: 100%;
+	z-index: 111111;
+	behavior: url(/static/web/css/web/style/css/com/htc/pie.htc)
+}
+
+.index .top-nav-link li {
+	display: inline-block
+}
+
+.index .nav-top-bar {
+	height: 40px;
+	font-size: 15px;
+	color: #fff;
+	box-sizing: border-box;
+	width: 140px;
+	float: left
+}
+
+.index .nav-top-bar .ntba {
+	position: relative;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	text-align: right;
+	padding: 10px 31px;
+	z-index: 111111
+}
+
+.index .nav-top-bar .ntba:after {
+	content: " ";
+	background: url(http://static.liwushuo.com/static/web/img/base-layout/arrow_pulldown_d8d45bc.png);
+	display: inline-block;
+	width: 7px;
+	height: 4px;
+	vertical-align: middle;
+	margin-top: 0;
+	position: relative;
+	left: 5px
+}
+
+.index .nav-top-bar .ntba.active {
+	background: #e32f2f
+}
+
+.index .nav-top-bar:hover .ntba {
+	background: #e32f2f
+}
+
+.index .nav-top-bar:hover #ntba-home {
+	background: #e32f2f
+}
+
+.index .nav-top-bar:hover #ntba-download {
+	background: #e32f2f
+}
+
+.index #ntba-home {
+	position: relative;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 31px;
+	z-index: 111111
+}
+
+.index #ntba-home.active {
+	background: #e32f2f
+}
+
+.index nav a {
+	display: block;
+	color: #fff
+}
+
+.index nav ul ul {
+	position: absolute;
+	top: 40px;
+	display: none;
+	background: #fff;
+	overflow: hidden;
+	width: 138px;
+	text-align: center;
+	border: 1px solid #E3E3E3;
+	box-shadow: 0 0 10px rgba(0,0,0,.12);
+	border-radius: 0;
+	z-index: 11111
+}
+
+.index nav ul li:hover>ul {
+	display: block
+}
+
+.index nav ul ul li {
+	float: left;
+	position: relative;
+	height: 34px;
+	width: 100%;
+	line-height: 36px
+}
+
+.index nav ul ul li a {
+	height: 33px;
+	margin: 0 10px;
+	border-bottom: #c8c7cc dotted 1px;
+	color: #555
+}
+
+.index nav ul ul li:hover {
+	background: #f7f7f7
+}
+
+.index nav ul ul li:hover a {
+	color: #f84e4e
+}
+
+.index nav ul ul li:last-child a {
+	border-bottom: 0
+}
+
+.index nav ul li:hover {
+	opacity: 1
+}
+
+.index #ntba-download {
+	position: relative;
+	height: 20px;
+	line-height: 20px;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	z-index: 111111
+}
+
+.index #ntba-download:before {
+	content: " ";
+	background: url(http://static.liwushuo.com/static/web/img/base-layout/icon_download_nav_d86e83c.png);
+	display: inline-block;
+	width: 14px;
+	height: 24px;
+	vertical-align: middle;
+	margin-top: 0;
+	position: relative;
+	top: -3px;
+	left: -8px
+}
+
+.index #ntba-download.active {
+	background: #e32f2f
+}
+
+.index .btn-login {
+	position: absolute;
+	right: 0;
+	width: 100px;
+	height: 36px;
+	color: #444;
+	border: solid 1px #d9d9d9;
+	margin-top: 26px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 1px;
+	line-height: 36px;
+	font-size: 14px;
+	background: #f9f9f9
+}
+
+.index .btn-login:hover {
+	background: #fff
+}
+
+.index .user-container {
+	position: absolute;
+	right: 0;
+	width: 135px;
+	height: 55px;
+	color: #5c5c5c;
+	margin-top: 25px;
+	text-align: center;
+	border-radius: 6px;
+	line-height: 42px;
+	cursor: pointer;
+	z-index: 111111
+}
+
+.index .user-container:hover .user-option {
+	display: block
+}
+
+.index .user-container .user-info {
+	position: absolute;
+	width: 100%
+}
+
+.index .user-container .user-info .user-avatar {
+	background: url(http://static.liwushuo.com/static/web/img/default_avatar_6e96681.png);
+	background-size: cover;
+	-ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	display: block;
+	float: left
+}
+
+.index .user-container .user-info .user-name {
+	font-size: 16px;
+	line-height: 40px;
+	margin-left: 45px;
+	width: 85px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: left
+}
+
+.index .user-container .user-info .user-name:hover {
+	text-overflow: inherit;
+	overflow: visible
+}
+
+.index .user-container .user-option {
+	background: #fff;
+	margin-top: 45px;
+	margin-left: -13px;
+	border-radius: 6px;
+	width: 142px;
+	display: none;
+	box-shadow: 0 0 10px rgba(0,0,0,.12)
+}
+
+.index .user-container .user-option li {
+	color: #333;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 10px
+}
+
+.index .user-container .user-option li:first-child {
+	border-radius: 6px 6px 0 0
+}
+
+.index .user-container .user-option li:first-child a {
+	border-top: 0
+}
+
+.index .user-container .user-option li:first-child:before {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 30px;
+	top: 33px;
+	width: 17px;
+	height: 12px;
+	background: url(http://static.liwushuo.com/static/web/img/base-layout/arrow-up_95835bb.png)
+}
+
+.index .user-container .user-option li:first-child:hover:before {
+	background: url(http://static.liwushuo.com/static/web/img/base-layout/arrow-up_hover_bb1f788.png)
+}
+
+.index .user-container .user-option li:last-child {
+	border-radius: 0 0 6px 6px
+}
+
+.index .user-container .user-option li:hover {
+	background: #f7f7f7
+}
+
+.index .user-container .user-option li:hover a {
+	color: #f84e4e
+}
+
+.index .user-container .user-option li a {
+	width: 100%;
+	display: block;
+	color: #333;
+	border-top: dotted #c8c7cc 1px
+}
+
+.index .load-tip {
+	width: 100%;
+	text-align: center;
+	clear: both;
+	display: block;
+	height: 76px;
+	border-radius: 6px;
+	background: #fff;
+	max-width: 980px;
+	border: solid #dedede 1px;
+	line-height: 76px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	cursor: pointer
+}
+
+.index #next {
+	clear: both
+}
+
+.index .login-modals .modal-header {
+	padding: 15px;
+	text-align: center;
+	color: #f84e4e;
+	font-size: 20px;
+	border-bottom: 1px solid #eee
+}
+
+.index .login-modals .modal-close {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background-repeat: no-repeat;
+}
+
+.index .login-modals .modal-body {
+	padding: 30px 52px;
+	width: 355px
+}
+
+.index .login-modals .modal-body li {
+	text-align: center;
+	margin-right: 44px;
+	margin-left: 10px;
+	display: inline-block
+}
+
+.index .login-modals .modal-body li i {
+	height: 106px;
+	width: 106px;
+	display: block;
+	margin-bottom: 20px;
+	cursor: pointer;
+	-webkit-transition: all .3s ease 0s;
+	-moz-transition: all .3s ease 0s;
+	-o-transition: all .3s ease 0s
+}
+
+.index .login-modals .modal-body li i:hover {
+	-webkit-transition: all .3s ease 0s;
+	-moz-transition: all .3s ease 0s;
+	-o-transition: all .3s ease 0s;
+	-moz-transform: translate(0px,-5px);
+	-webkit-transform: translate(0px,-5px);
+	-o-transform: translate(0px,-5px);
+	-ms-transform: translate(0px,-5px);
+	transform: translate(0px,-5px)
+}
+
+.index .login-modals .login-icon-weibo {
+	background-repeat: no-repeat;
+}
+
+.index .login-modals .login-icon-qq {
+	background-repeat: no-repeat;
+}
+
+.index .login-modals .login-icon-wechat {
+	background-repeat: no-repeat;
+}
+
+.index .searchbox {
+	height: 60px;
+	padding: 0;
+	width: 400px;
+	position: relative;
+	float: right;
+	margin-top: 12px
+}
+
+.index .searchbox input {
+	background: #fff;
+	background-clip: padding-box;
+	border-radius: 4px;
+	color: #333;
+	line-height: 32px;
+	height: 32px;
+	margin: 15px 30px 0;
+	outline: 0;
+	padding: 0 35px;
+	width: 294px;
+	border: solid #f84e4e 2px;
+	font-size: 16px
+}
+
+.index .searchbox label {
+	background: #f84e4e;
+	width: 81px;
+	height: 33px;
+	border-radius: 0 4px 4px 0;
+	right: 2px;
+	position: absolute;
+	top: 17px;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	line-height: 33px
+}
+
+.index .searchbox i {
+	background: transparent url(http://static.liwushuo.com/static/web/img/base-layout/icon_search_5c49228.png) no-repeat top left;
+	display: block;
+	width: 20px;
+	height: 20px;
+	left: 40px;
+	position: absolute;
+	top: 24px
+}
+
+.index .nav-searchbox {
+	position: absolute;
+	right: 15px;
+	top: 0
+}
+
+.index .nav-searchbox input {
+	background-clip: padding-box;
+	border-radius: 4px;
+	color: #333;
+	line-height: 26px;
+	height: 24px;
+	margin: 7px 0 0;
+	outline: 0;
+	width: 175px;
+	border: solid rgba(204,204,204,0) 1px;
+	padding: 0 55px 0 10px;
+	background: #f9f9f9;
+	font-size: 14px
+}
+
+.index .nav-searchbox label {
+	width: 55px;
+	height: 28px;
+	border-radius: 0 4px 4px 0;
+	right: 0;
+	position: absolute;
+	text-indent: -99999px;
+	top: 6px;
+	cursor: pointer
+}
+
+.index .nav-searchbox label i {
+	background: transparent url(http://static.liwushuo.com/static/web/img/base-layout/icon_search_5c49228.png) no-repeat top left;
+	display: block;
+	width: 20px;
+	height: 20px;
+	right: 16px;
+	position: absolute;
+	top: 5px
+}
+
+.index .btn-red-cutout {
+	border: solid 2px #f84e4e;
+	text-align: center;
+	border-radius: 32px;
+	vertical-align: middle;
+	color: #f84e4e;
+	padding: 3px 25px;
+	display: block;
+	cursor: pointer
+}
+
+.index .toast-box {
+	position: fixed;
+	min-width: 100px;
+	max-width: 200px;
+	z-index: 999;
+	top: 50px;
+	left: 20px;
+	border-radius: 2px;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(51,51,51,.9);
+	color: #fff;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
+	-webkit-transition: opacity .3s linear;
+	transition: opacity .3s linear;
+	z-index: 1111111
+}
+
+.index .modals-backdrop {
+	position: fixed;
+	display: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 111111;
+	background: rgba(0,0,0,.5);
+	background: #333 \9
+}
+
+.index .modal {
+	position: fixed;
+	display: none;
+	top: 50%;
+	left: 50%;
+	z-index: 111111;
+	width: 385px;
+	background-color: #fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 3px 7px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 3px 7px rgba(0,0,0,.3);
+	box-shadow: 0 3px 7px rgba(0,0,0,.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	overflow: hidden
+}
+
+.index .normal-modals {
+	white-space: pre-wrap
+}
+
+.index .normal-modals h3 {
+	font-size: 18px;
+	color: #333;
+	margin-top: 35px;
+	margin-bottom: 15px
+}
+
+.index .normal-modals p,.normal-modals a {
+	font-size: 14px;
+	color: #666;
+	line-height: 26px
+}
+
+.index .normal-modals a {
+	cursor: pointer
+}
+
+.index .nm-title {
+	position: relative;
+	background: #f84e4e;
+	padding: 10px 15px;
+	border-radius: 6px 6px 0 0;
+	box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,0 1px 1px rgba(0,0,0,.2);
+	margin: -1px -1px 0;
+	line-height: 24px
+}
+
+.index .nm-title .nm-title-text {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	padding-left: 12px
+}
+
+.index .nm-title .nm-title-close {
+	position: absolute;
+	top: 50%;
+	_top: 20px;
+	right: 20px;
+	width: 14px;
+	height: 14px;
+	margin-top: -7px;
+	text-indent: -9999px;
+	cursor: pointer;
+	background: url(http://static.liwushuo.com/static/web/img/btn_close_d4e137c.png) no-repeat;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.index .nm-content {
+	padding: 0 20px;
+	margin: 17px 0;
+	overflow: scroll
+}
+
+.index .nm-content img {
+	width: 100%
+}
+
+.index .nm-bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 44px;
+	background: #f7f7f7
+}
+
+.index .gift-list-modal {
+	margin: auto;
+	width: 440px;
+	height: 400px;
+	border-radius: 8px;
+	border: 1px solid #888;
+	box-shadow: 0 0 80px 0 rgba(0,0,0,.4);
+	background: #fff;
+	text-align: left
+}
+
+.index .glm-title {
+	position: relative;
+	background: #f84e4e;
+	padding: 10px 15px;
+	border-radius: 6px 6px 0 0;
+	box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,0 1px 1px rgba(0,0,0,.2);
+	margin: -1px -1px 0;
+	line-height: 24px
+}
+
+ .index .glm-title .glm-title-text {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	padding-left: 12px
+}
+
+.index .glm-title .glm-title-close {
+	position: absolute;
+	top: 50%;
+	_top: 20px;
+	right: 30px;
+	width: 14px;
+	height: 14px;
+	margin-top: -7px;
+	text-indent: -9999px;
+	cursor: pointer;
+	background: url(http://static.liwushuo.com/static/web/img/btn_close_d4e137c.png) no-repeat;
+	display: inline-block;
+	vertical-align: middle
+}
+
+.index .glm-content {
+	padding: 0 15px;
+	margin: 17px 0
+}
+
+.index .gl-name {
+	margin: 0 0 10px;
+	display: block
+}
+
+.index .gl-name input {
+	padding: 10px;
+	font-size: 16px;
+	line-height: 18px;
+	border-radius: 3px;
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #222;
+	width: 94%
+}
+
+.index .gl-command {
+	padding: 25px 26px;
+	background: #f7f7f7;
+	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
+	left: 0;
+	bottom: 0;
+	border-radius: 0 0 8px 8px
+}
+
+.index .gl-item {
+	display: block;
+	margin: 0 12px;
+	border: solid 1px #DDD;
+	padding: 8px 12px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 12px
+}
+
+.index .gl-item.active {
+	background: url(http://static.liwushuo.com/static/web/img/icon_selected_9a7fd35.png) no-repeat 96% center
+}
+
+.index .gl-item:hover {
+	text-decoration: none;
+	background-color: #F5F5F5
+}
+
+.index .gl-cover {
+	width: 52px;
+	height: 52px;
+	display: block;
+	float: left;
+	border-radius: 4px;
+	background: url(http://static.liwushuo.com/static/web/img/icon_listblank_b64544e.png);
+	background-size: 100% 100%;
+	background-color: #f7f7f7
+}
+
+.index .gl-item-info {
+	margin-left: 9px;
+	margin-top: 5px;
+	float: left
+}
+
+.index .gl-item-info .gli-name {
+	display: block;
+	font-size: 16px;
+	color: #333
+}
+
+.index .gl-item-info .gli-count {
+	display: block;
+	font-size: 14px;
+	color: #7f7f7f
+}
+
+.index #giftListContainer {
+	max-height: 250px;
+	overflow: auto
+}
+
+.index #newGiftListContainer {
+	padding: 0 10px
+}
+
+.index #btnNewGiftList {
+	position: relative;
+	float: left;
+	padding-left: 20px;
+	vertical-align: middle;
+	font-size: 16px
+}
+
+.index #btnNewGiftList i {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	left: 2px;
+	overflow: hidden;
+	background: transparent url(http://static.liwushuo.com/static/web/img/btn_add_3930058.png) no-repeat 0 0;
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	display: inline-block;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto
+}
+
+.index #btnGiftListClose {
+	position: absolute;
+	right: 27px;
+	top: 20px
+}
+
+.index #btnNewGiftListCancel {
+	position: relative;
+	float: left;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #f84e4e
+}
+
+.index #btnNewGiftListConfirm {
+	position: absolute;
+	right: 27px;
+	top: 20px
+}
+
+.index .new-gift-list-text {
+	line-height: 30px;
+	margin-top: 30px;
+	margin-bottom: 5px
+}
+
+.index .clearfix {
+	*zoom: 1;
+	display: block
+}
+
+.index .clearfix:after,.clearfix:before {
+	display: table;
+	line-height: 0;
+	content: ""
+}
+
+.index .clearfix:after {
+	clear: both
+}
+
+
+
+body.index {
+	font-family: FZLanTingHei-EL-GBK,"Open Sans","Hiragino Sans GB","Microsoft YaHei","微软雅黑",STHeiti,"WenQuanYi Micro Hei",Dengxian,Arial,SimSun,sans-serif;
+	background-color: #fff;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	line-height: 1.5;
+	word-wrap: break-word;
+	font-size: 16px;
+	color: #333
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+/*article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+	display: block
+}
+
+audio,canvas,progress,video {
+	display: inline-block;
+	vertical-align: baseline
+}*/
+
+
+a {
+	background: transparent;
+	text-decoration: none;
+	color: black;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	outline: 0
+}
+
+
+
+
+
+
+input,textarea,button,a {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none
+}
+
+.index .post-item {
+	width: 310px;
+	height: 346px;
+	border-radius: 6px;
+	border: solid #dedede thin;
+	float: left;
+	margin-bottom: 30px;
+	background: #fff;
+	margin-right: 22px;
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s
+}
+
+.index .post-item:hover {
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;
+	-moz-transform: translate(0px,-5px);
+	-webkit-transform: translate(0px,-5px);
+	-o-transform: translate(0px,-5px);
+	-ms-transform: translate(0px,-5px);
+	transform: translate(0px,-5px);
+	-webkit-box-shadow: 0 5px 10px rgba(67,72,84,.3);
+	-moz-box-shadow: 0 5px 10px rgba(67,72,84,.3);
+	-o-box-shadow: 0 5px 10px rgba(67,72,84,.3);
+	box-shadow: 0 5px 10px rgba(67,72,84,.3)
+}
+
+.index .post-item .pitem {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+.index .post-item .new-flag {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 57px;
+	height: 56px;
+	background: url(http://static.liwushuo.com/static/web/img/icon_tag_new_f721355.png);
+	background-size: 100% 100%
+}
+
+.index .post-item .pitem-cover {
+	height: 142px;
+	background-size: cover;
+	-ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	background-position: 50% 50%;
+	border-radius: 6px 6px 0 0
+}
+
+.index .post-item .pitem-title {
+	font-size: 18px;
+	padding: 15px;
+	color: #333;
+	line-height: 25px
+}
+
+.index .post-item .pitem-content {
+	font-size: 14px;
+	color: #888;
+	height: 80px;
+	padding: 15px;
+	padding-top: 0;
+	line-height: 21px
+}
+
+.index .post-item .pitem-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px
+}
+
+.index .post-item .info-item {
+	float: left;
+	height: 17px;
+	margin-right: 15px
+}
+
+.index .post-item .info-item i {
+	display: block;
+	width: 18px;
+	height: 17px;
+	float: left
+}
+
+.index .post-item .icon-like {
+	background: url(http://static.liwushuo.com/static/web/img/icon_favorites_84ea68a.png)
+}
+
+.index .post-item .icon-like.like {
+	background: url(http://static.liwushuo.com/static/web/img/icon_favorites_selected_35f43f3.png)
+}
+
+.index .post-item .icon-like.active {
+	background: url(http://static.liwushuo.com/static/web/img/icon_favorites_selected_35f43f3.png)
+}
+
+.index .post-item .icon-share {
+	background: url(http://static.liwushuo.com/static/web/img/icon_share_2bbb537.png)
+}
+
+.index .post-item .icon-comment {
+	background: url(http://static.liwushuo.com/static/web/img/icon_comments_f4d62e5.png)
+}
+
+.index .post-item .info-item span {
+	font-size: 14px;
+	line-height: 18px;
+	color: #333;
+	display: block;
+	padding: 0;
+	margin: -1px 0 0 24px
+}
+
+.index .post-item .pitem-event-cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0
+}
+
+.index .download-qr {
+	max-width: 700px;
+	border-radius: 10px;
+	height: 290px;
+	text-align: center;
+	background: #fff;
+	min-width: 300px;
+	margin: 0 auto;
+	border: solid 1px #dedede;
+	clear: both
+}
+
+.index .download-qr h3 {
+	position: relative;
+	top: 37px;
+	font-size: 19px
+}
+
+.index .download-qr p {
+	position: relative;
+	top: 47px;
+	color: #5f5f5f
+}
+
+.index .download-qr img {
+	width: 143px;
+	height: 143px;
+	position: relative;
+	top: 64px
+}
+
+.index .wrapper {
+	margin: 0 auto;
+	width: 980px;
+	position: relative
+}
+
+.index .post-list {
+	width: 1024px
+}
+
+.index .cf:before,.cf:after {
+	content: " ";
+	display: table
+}
+
+.index .cf:after {
+	clear: both
+}
+
+.index .cf {
+	*zoom: 1
+}
+
+.index .banner-wrapper {
+	background: url(http://static.liwushuo.com/static/web/img/bg_banner_home_bc101d6.png) no-repeat center 0;
+	-ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	height: 450px;
+	overflow: hidden;
+	max-width: 1920px;
+	margin: 0 auto
+}
+
+.index .logo {
+	padding-top: 137px;
+	padding-left: 32px
+}
+
+.index .logo a {
+	background: url(http://static.liwushuo.com/static/web/img/logo_2_ae66168.png) no-repeat;
+	background-size: 100% 100%;
+	-ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	display: block;
+	width: 362px;
+	height: 100px;
+	text-indent: -9999px
+}
+
+.index .download {
+	margin-left: 32px;
+	margin-top: 22px
+}
+
+.index .download .btn-iphone,.index .download .btn-android {
+	display: inline-block;
+	width: 194px;
+	height: 52px;
+	text-indent: -9999px;
+	cursor: pointer
+}
+
+.index .download .btn-iphone {
+	background: url(http://static.liwushuo.com/static/web/img/btn_download_ios_054da0c.png) no-repeat;
+	background-size: 100% 100%;
+	-ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc)
+}
+
+.index .download .btn-iphone:hover {
+	background: url(http://static.liwushuo.com/static/web/img/btn_download_ios_hover_a45f078.png) no-repeat;
+	background-size: 100% 100%;
+	-ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc)
+}
+
+.index .download .btn-android {
+	margin-left: 18px;
+	background: url(http://static.liwushuo.com/static/web/img/btn_download_android_59519b4.png) no-repeat;
+	-ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	background-size: 100% 100%
+}
+
+.index .download .btn-android:hover {
+	background: url(http://static.liwushuo.com/static/web/img/btn_download_android_hover_c95116f.png) no-repeat;
+	background-size: 100% 100%;
+	-ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc)
+}
+
+.index .android-download {
+	display: inline-block;
+	position: relative
+}
+
+.index .android-download-list {
+	display: none;
+	position: absolute;
+	top: 52px;
+	left: 18px;
+	z-index: 10;
+	width: 194px
+}
+
+.index .android-download-list .adl-item {
+	width: 100%;
+	height: 49px;
+	float: left;
+	background: rgba(74,74,74,.95);
+	opacity: .9;
+	border-top: solid 1px #aaa
+}
+
+.index .adl-item:hover {
+	opacity: 1
+}
+
+.index .adl-item i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 29px;
+	margin: 10px 10px 0 17px
+}
+
+.index .adl-item p {
+	float: left;
+	display: inline-block;
+	line-height: 52px;
+	color: #fff;
+	width: 120px;
+	font-size: 18px;
+	text-align: center
+}
+
+.index .btn-91 i {
+	background-repeat: no-repeat;
+}
+
+.index .btn-360 i {
+	background-repeat: no-repeat;
+}
+
+.index .btn-wandoujia i {
+	height: 31px;
+	background-repeat: no-repeat;
+}
+
+.index .btn-pc i {
+	height: 24px;
+	margin: 14px 10px 14px 17px;
+	background-repeat: no-repeat;
+}
+
+.index .adl-item:last-child {
+	border-radius: 0 0 6px 6px
+}
+
+.index .social {
+	margin-left: 32px;
+	padding-top: 40px;
+	background: url(http://static.liwushuo.com/static/web/img/qrcode_download_91e9150.png) no-repeat 271px 59px;
+	height: 100px
+}
+
+.index .icon-weixin {
+	display: inline-block;
+	background: url(../img/icon_wechat.png?__sprite) no-repeat;
+	width: 34px;
+	height: 35px;
+	vertical-align: middle
+}
+
+.index .icon-weibo {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+}
+
+.index .icon-tietie {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+}
+
+.index .social i {
+	margin-right: 12px
+}
+
+.index .social p {
+	font-size: 18px;
+	color: #fff
+}
+
+.index .social p a:link,.index .social p a:hover,.index .social p a:visited {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff
+}
+
+.index .weibo,.index .tietie {
+	margin-top: 50px
+}
+
+.index .slideshow {
+	width: 240px;
+	height: 337px;
+	position: absolute;
+	right: 142px;
+	top: 182px;
+	z-index: 1000
+}
+
+.index .slideshow li {
+	list-style: none
+}
+
+.index .slideshow ul li {
+	float: left
+}
+
+.index .slideshow .dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	text-align: center;
+	width: 262px;
+	margin-left: -40px
+}
+
+.index .slideshow .dots li {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	margin: 0 4px;
+	text-indent: -999em;
+	border: 2px solid #fff;
+	border-radius: 6px;
+	cursor: pointer;
+	opacity: .4;
+	-webkit-transition: background .5s,opacity .5s;
+	-moz-transition: background .5s,opacity .5s;
+	transition: background .5s,opacity .5s
+}
+
+.index .slideshow .dots li.active {
+	background: #fff;
+	opacity: 1
+}
+
+.index .gallery {
+	width: 388px;
+	height: 402px;
+	position: absolute;
+	background-size: cover;
+	background: url(http://static.liwushuo.com/static/web/img/slide/bg_slideshow_banner_bac0bd0.png) no-repeat;
+	-ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+	right: 10px;
+	top: 117px
+}
+
+.index .intro {
+	padding-top: 338px;
+	background: url(http://static.liwushuo.com/static/web/img/intro_69cb776.png) no-repeat 0 50px
+}
+
+.index .contact {
+	padding-top: 150px;
+	background: url(http://static.liwushuo.com/static/web/img/contact_d946b84.png) no-repeat 0 15px
+}
+
+.index .wrapper-about li {
+	display: inline-block;
+	text-align: center
+}
+
+.index .wrapper-about h3 {
+	font-size: 20px;
+	color: #191a1b;
+	margin-bottom: 30px;
+	font-weight: 400
+}
+
+.index .wrapper-about p {
+	font-size: 16px;
+	color: #5d626f;
+	margin-bottom: 10px
+}
+
+.index .column-3 {
+	width: 33.33%;
+	float: left
+}
+
+.index .column-4 {
+	width: 25%;
+	float: left
+}
+
+.index .fancybox-outer,.index .fancybox-inner,.index .fancybox-skin {
+	border-radius: 20px!important
+}
+
+.index .recommend-wrapper {
+	margin-top: 50px
+}
+
+.index .recommend-wrapper h3 {
+	font-size: 18px;
+	font-weight: 400;
+	padding-bottom: 20px
+}
+
+.index .reco-list {
+	width: 1024px
+}
+
+.index .search-blank {
+	margin-bottom: 30px
+}
+
+.index .btn-download {
+	width: 100%;
+	height: 76px;
+	margin-bottom: 30px;
+	background: #fff;
+	border: solid 1px #dedede;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 6px;
+	display: block;
+	cursor: pointer
+}
+
+.index .btn-download span {
+	color: #f84e4e
+}
+
+.index .load-end {
+	max-width: 980px;
+	margin-bottom: 30px
+}
+
+.index .body-about {
+	background: #efeff4
+}
+
+.index .header-about {
+	border: 0
+}
+
+.index .header-about .top-nav-link a.active {
+	border: 0
+}
+
+.index .main-about {
+	background: #efeff4
+}
+
+.index .wrapper-about {
+	background: #fff;
+	padding: 44px 70px 60px;
+	border-radius: 10px;
+	width: 840px
+}
+
+.index .wrapper-about .title {
+	font-size: 22px;
+	font-weight: 400;
+	margin-bottom: 38px
+}
+
+.index .wrapper-about .detail {
+	background: #efeff4;
+	padding: 30px 40px;
+	color: #5f5f5f;
+	border-radius: 6px
+}
+
+.index .about-intro {
+	margin-top: 90px
+}
+
+.index .about-contact {
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+
+.index .search-blank i {
+	background-repeat: no-repeat;
+}
+
+.index .back-top {
+	display: none;
+	width: 56px;
+	height: 50px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+}
+
+.index .back-top:hover {
+	background-repeat: no-repeat;
+}
+
+a.related-search {
+	text-decoration: underline;
+	cursor: auto
+}
+
+.index #related-search {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 52px;
+	vertical-align: bottom
+}
+
+.index td {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	width: 175px;
+	line-height: 25px;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	min-width: 280px
+}
+
+.index table {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: grey;
+	vertical-align: top;
+	margin-bottom: 30px
+}
+
+.index .sticky {
+	position: fixed;
+	left: 50%;
+	margin-left: 515px;
+	bottom: 115px;
+	z-index: 100;
+	border-top: 0;
+	display: block
+}
+
+.index a:hover {
+	text-decoration: none!important
+}
+
+.index .login-modals .modal-close {
+	background-position: -88px 0px
+}
+
+.index .login-modals .login-icon-weibo {
+	background-position: 0px -21px
+}
+
+.index .login-modals .login-icon-qq {
+	background-position: 0px -130px
+}
+
+.index .login-modals .login-icon-wechat {
+	background-position: 0px -239px
+}
+
+.index .btn-91 i {
+	background-position: -78px -348px
+}
+
+.index .btn-360 i {
+	background-position: -78px -379px
+}
+
+.index .btn-wandoujia i {
+	background-position: -78px -411px
+}
+
+.index .btn-pc i {
+	background-position: -79px -445px
+}
+
+.index .icon-weibo {
+	background-position: -78px -472px
+}
+
+.index .icon-tietie {
+	background-position: -78px -503px
+}
+
+.index .search-blank i {
+	background-position: -6px -534px
+}
+
+.index .back-top {
+	background-position: -50px -637px
+}
+
+.index .back-top:hover {
+	background-position: -50px -690px
+}
+
+.index .login-modals .modal-close,.index .login-modals .login-icon-weibo,.index .login-modals .login-icon-qq,.index .login-modals .login-icon-wechat,.index .btn-91 i,.index .btn-360 i,.index .btn-wandoujia i,.index .btn-pc i,.index .icon-weibo,.index .icon-tietie,.index .search-blank i,.index .back-top,.index .back-top:hover {
+	background-image: url(http://static.liwushuo.com/static/web/css/web/style/css/index_z_d8fb8f2.png)
+}

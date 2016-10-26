@@ -1,0 +1,52 @@
+body,#login{
+	margin:0px;
+	padding:0px;
+}
+body{
+	/*background:url(../img/index/login_bg.jpg) no-repeat 100px 0px;*/
+	background-color:#92B53D;
+}
+#register a:focus{
+	outline:none;
+}
+#register{
+	position:absolute;
+	top:20px;
+	right:500px;
+	width:400px;
+	height:470px;
+	border:1px solid #ccc;
+	border-radius:8px;
+	background:#FFFFFF;
+}
+#register .register_header{
+	height:40px;
+	line-height:40px;
+	color:#ccc;
+	font-size:18px;
+	font-family:;
+	margin:10px 0 0 10px;
+	text-align: center;
+}
+
+#register form{
+	width:300px;
+	margin:40px auto;
+}
+#register form input{
+	font-size:14px;
+	color:#999;
+}
+
+
+.register_footer{
+	width:400px;
+	text-align:center;
+	font-size:14px;
+	font-weight:normal;
+	color:#333;
+}
+
+.register_footer input,.register_footer a{
+	font-weight:normal;
+}
