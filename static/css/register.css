@@ -45,8 +45,42 @@ body{
 	font-size:14px;
 	font-weight:normal;
 	color:#333;
+	margin:30px 0 50px 0;
 }
 
 .register_footer input,.register_footer a{
 	font-weight:normal;
+}
+/*输入框提示*/
+#register .register_userinfo,#register .register_userdanger,
+#register .register_emailinfo,#register .register_emaildanger,
+#register .register_passinfo,#register .register_passdanger,
+#register .register_notepassdanger{
+	margin:5px 0 5px 0;
+	width:300px;
+	height:40px;
+	padding:8px 0 5px 0;
+	text-align:center;
+	font-size:13px;
+	display:none;
+}
+/*输入框正确提示*/
+#register .register_usersuc,#register .register_emailsuc,
+#register .register_passsuc{	
+	position: absolute;
+	z-index: 100;
+	color:green;
+	display:none;
+}
+#register .register_usersuc{
+	top: 15px;
+	left: 270px;
+}
+#register .register_emailsuc{
+	left: 320px;
+	top: 186px;
+}
+#register .register_passsuc{
+	left: 321px;
+	top: 247px;
 }

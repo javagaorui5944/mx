@@ -53,7 +53,7 @@ a:focus{
 	width:300px;
 	margin:40px auto;
 }
-..login_other a{
+.login_other a{
 	text-decoration:none;
 }
 .login_other a img{
@@ -71,4 +71,13 @@ a:focus{
 	font-size:14px;
 	font-weight:normal;
 	color:#ccc;
+}
+#login .login_danger{
+	margin:5px 0 5px 0;
+	width:300px;
+	height:40px;
+	padding:8px 0 5px 0;
+	text-align:center;
+	font-size:13px;
+	display:none;
 }
