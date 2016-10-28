@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> 
+  <meta http-equiv="Content-Language" content="zh_CN" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" /> 
+  <link rel="apple-touch-icon" sizes="57x57" href="http://static.liwushuo.com/static/web/img/favicon/apple-icon-57x57_10d74da.png" /> 
+  <link rel="apple-touch-icon" sizes="76x76" href="http://static.liwushuo.com/static/web/img/favicon/apple-icon-76x76_c08081d.png" /> 
+  <link rel="apple-touch-icon" sizes="120x120" href="http://static.liwushuo.com/static/web/img/favicon/apple-icon-120x120_3317fa3.png" /> 
+  <link rel="apple-touch-icon" sizes="152x152" href="http://static.liwushuo.com/static/web/img/favicon/apple-icon-152x152_5fde678.png" /> 
+  <link rel="icon" type="image/png" sizes="32x32" href="http://static.liwushuo.com/static/web/img/favicon/favicon-32x32_23d4a98.png" /> 
+  <link rel="icon" type="image/png" sizes="96x96" href="http://static.liwushuo.com/static/web/img/favicon/favicon-96x96_acf6191.png" /> 
+  <meta name="msapplication-TileImage" content="/web/style/img/favicon/ms-icon-144x144.png" /> 
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+  <link rel="Shortcut Icon" href="http://static.liwushuo.com/static/web/img/favicon/favicon_23d4a98.png" /> 
+  <link rel="Bookmark" href="http://static.liwushuo.com/static/web/img/favicon/favicon_23d4a98.png" /> 
+  <link rel="stylesheet" type="text/css" href="static/css/details.css">
+  <link rel="stylesheet" href="static/css/detailssfle.css">
+  <script>
+    function getParams() {
+          var originalUrl = location.href;
+          var paramUrl, tempObj = {}, res = {};
+          if (originalUrl.split('?').length > 1) {
+              paramUrl = originalUrl.split('?')[1];
+              paramUrl.split('&').forEach(function (item) {
+                  if (item.split('=').length > 0) {
+                      res[item.split('=')[0]] = item.split('=')[1];
+                  } else {
+                      return;
+                  }
+              });
+              return res.page;
+          } else {
+              return res.page;
+          }
+      }
+  </script>
+ </head> 
+ <body class="xiangqing"> 
+  <div class="main-wrapper"> 
+   <div class="header-wapper"> 
+    <div class="header"> 
+     <div id="header-banner" class="wrapper"> 
+      <div class="head-left"> 
+       <a class="header-logo" href="/" title="礼物说"></a> 
+       <form class="searchbox" onsubmit="return false;"> 
+        <input type="text" id="search-input" placeholder="搜索礼物、攻略" /> 
+        <label for="search-input">搜索</label> 
+        <i></i> 
+       </form> 
+      </div> 
+      <div class="head-right"> 
+       <div class="btn-login" id="btn-login">
+        登录 / 注册
+       </div> 
+      </div> 
+     </div> 
+     <div id="header-nav"></div> 
+    </div> 
+   </div> 
+   <div class="header-margin-fix"></div> 
+   <div class="wrapper main-content"> 
+     <div class="content-left" id="neirong"> 
+     
+     </div> 
+   </div>
+   <div class="changetab module-tabpanel">
+       <div class="changetab-info">
+            <div class="imgshow">
+                <img src="static/img/fct.png" alt="">
+            </div>
+       </div>
+       <div class="pinglun">
+           <ul class="ii">
+               <li>详情</li>
+               <li>评论</li>
+               <li>同类商品</li>
+           </ul>
+           <div class="pinglun-box">
+             <div class="detailbox oo" id='reco-list' >
+                
+             </div>
+             <div class="comment aall oo" style="display: block;">
+                  <div id="commentbox">
+                       
+                  </div>
+                  <div>
+                      <textarea name="" id="textll" style="width: 600px;height: 100px;" placeholder="写下您的评论"></textarea>
+                      <div style="    background: #F44336;width: 100px;line-height: 30px;text-align: center;color: #fff;border-radius: 5px;" class="subbtn">
+                          提交
+                      </div>
+                  </div>
+             </div>
+           </div>
+       </div>
+   </div>
+   <div class="footer" style="">
+    <p class="copyright"> <span style="font-family:Arial;">© </span>2014 - 2016 mengxingshuo 萌星科技有限公司 电信与信息服务业务经营许可证150653号 京ICP备15031023号-1
+        <span style="vertical-align: middle;">  电话：010-22222222</span>
+    </p>
+   </div>
+  <script type="text/html" id="info">
+      <div>
+          <h3>商品详情</h3>
+          <div class="detailbox-top">
+              {{ProductName}}
+          </div>
+          <h3>穿着效果</h3>
+          <div class="detailbox-top">
+              {{each imgarray as value i}}
+                  <img src={{value}} alt="">
+              {{/each}}
+          </div>
+      </div>
+  </script>
+  <script type="text/html" id="commnet">
+    {{each Comments as value i}}
+       <div class="comment-list" style="clear: both">
+          <img src={{value.u_img}} alt="" class="img">
+          <div class="text">
+            <div style="overflow: hidden;margin-bottom: 20px;">
+               <p style="float: left;">{{value.u_name}}</p>
+               <p style="float: right;">{{value.c_date}}</p>
+            </div>
+            <p>
+                {{value.c_content}}
+            </p>
+             <p>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </p>
+              <p>
+                <img src="" alt="">
+              </p>
+          </div>
+      </div>
+      {{/each}}
+  </script>
+  <script type="text/javascript" src="static/js/iframe/jquery.js"></script>
+  <script src="static/js/iframe/arttemplate.js"></script>
+  <script src="static/js/ip.js"></script>
+  <script src='static/js/iframe/jquery.base64.js'></script>
+  <script>
+    $(function(){
+      $.ajax({
+        "url":_ip+"/api/ShopDetailed?ProductID="+getParams(),
+        "type":'get',
+        'success':function(data){
+          var imgarry = [];
+          data.ShopDetail.ProductIntroduction = JSON.parse($.base64().decode(data.ShopDetail.ProductIntroduction));
+          var nicai = data.ShopDetail.ProductIntroduction.data.detailInfos.detailImage;
+          $.map(nicai,function(ele,i){
+              $.map(ele.list,function(elea,j){
+                 imgarry.push(elea)
+              })
+          })
+          data.ShopDetail.imgarray = imgarry;
+           var rendered = template("info", data.ShopDetail);
+           $("#reco-list").append(rendered)
+        }
+      });
+      $.ajax({
+        "url":_ip+"/api/ShowComment?pId="+getParams(),
+        "type":'get',
+        'success':function(data){
+            var rendered = template("commnet", data);
+           $("#commentbox").append(rendered)
+        }
+      })
+      $('.ii').on("click",'li',function(){
+        var _index = $(this).index();
+        $(".oo").addClass('aall');
+        $(".oo").eq(_index).removeClass('aall')
+      })
+
+      $(".subbtn").on("click",function(){
+          var da = $("#textll").val();
+          var nicai = {
+              "c_id": "1594",
+              "p_id": getParams(),
+              "u_name": "流浪的蛐蛐",
+              "c_content": "质量真的很好，没想到会这么厚，很惊喜，卖家服务态度很好，问了很多问题都很耐心地回答，而且客服推荐的码数刚刚好，大爱！会推荐给身边的朋友的！",
+              "c_date": "2016年10月28日",
+              "u_img": "http://s2.mogucdn.com/p1/160105/idid_ifrwenbygrsggntfguzdambqhayde_160x160.jpg"
+          };
+         $.ajax({
+            "url":"http://113.251.174.98:7078/api/AddComment",
+            "data":{p_id:1,u_name:"gaorui",c_content:da,c_date:"2016年10月27日",u_img:"http://s2.mogucdn.com/p1/160105/idid_ifrwenjuhfsggntfguzdambqhayde_160x160.jpg"},
+             "type":'post',
+             'success':function(data) {
+                var endata = [];
+                nicai.c_content = da;
+                endata.push(nicai);
+                  var kk = {
+                     Comments:endata
+                  }
+                  var rendered = template("commnet", kk);
+                  $("#commentbox").append(rendered)
+             }
+         })
+      })
+    })
+  </script>
+</body>
+</html>

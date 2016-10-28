@@ -1,0 +1,51 @@
+.xiangqing .changetab {
+	width: 980px;
+	margin: 0 auto;
+}
+.changetab-info .imgshow img{
+	width: 100%
+}
+.xiangqing .pinglun ul{
+	overflow:hidden;
+	height: 60px;
+	background-color: #eee;
+	width: 100%;
+	border-bottom: solid 1px #eee; 
+}
+.xiangqing .changetab .pinglun ul li {
+	float: left;
+	width: 300px;
+	text-align: center;
+	line-height: 60px;
+	border-right: solid 1px #333;
+	cursor: pointer;
+}
+.xiangqing .changetab .pinglun-box {
+	clear: both;
+}
+.xiangqing .changetab .detailbox ,.xiangqing .changetab .comment{
+	padding: 30px;
+	width: 600px;
+}
+.xiangqing .changetab .comment .img {
+	float:left;
+	border-radius: 40px;
+    width: 40px;
+}
+.xiangqing .changetab .detailbox ,.xiangqing .changetab .comment .text {
+	margin-left: 70px;
+}
+#commentbox .comment-list {
+	margin-bottom: 60px;
+}
+.xiangqing .changetab .detailbox h3 {
+	overflow: hidden;
+    padding: 40px 0 20px;
+    font: 18px/1.6 tahoma,arial,sans-serif;
+}
+.xiangqing .changetab .detailbox img {
+	margin-bottom: 60px;
+}
+.aall {
+	display: none;
+}
