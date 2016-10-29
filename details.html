@@ -193,7 +193,7 @@
           };
          $.ajax({
             "url":"http://113.251.174.98:7078/api/AddComment",
-            "data":{p_id:1,u_name:"gaorui",c_content:da,c_date:"2016年10月27日",u_img:"http://s2.mogucdn.com/p1/160105/idid_ifrwenjuhfsggntfguzdambqhayde_160x160.jpg"},
+            "data":{p_id: getParams(),u_name:"gaorui",c_content:da,c_date:"2016年10月27日",u_img:"http://s2.mogucdn.com/p1/160105/idid_ifrwenjuhfsggntfguzdambqhayde_160x160.jpg"},
              "type":'post',
              'success':function(data) {
                 var endata = [];
